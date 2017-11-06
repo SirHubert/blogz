@@ -10,11 +10,19 @@
         </style>
     </head>
 <body>
-    <div>
-        <a href='/blog'>Main Blog Page</a>
-        <a href='/newpost'>Add a Blog Entry</a>
-    </div>
+    <nav>
+        <div>
+            <a href='/blog'>Main Blog Page</a>
+            <a href='/newpost'>Add a Blog Entry</a>
+        </div>
+        <div>
+            <a href='/login'>Login</a>
+            <a href='/logout'>Logout</a>
+            <a href='/'>Author List</a>
+        </div>
+    </nav>
 
+</br>
     {% block content %}
     {% endblock %}
 

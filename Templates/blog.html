@@ -6,9 +6,13 @@
 <ul>
     {% for post in blogs%}
     <li>
-        <a href='/individual?id={{post.id}}'>{{post.post_title}} </a>
+       <a href='/blog?id={{post.id}}'>{{post.post_title}} </a>
     </br>
       {{post.post_body}}
+        <p>
+            Written by
+            <a href='/blog?user={{post.owner.id}}'>{{post.owner.username}}</a>
+        </p>
         <hr/>
     </li>
     

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<ul>
+        {% for post in blogs%}
+        <li>
+           <a>{{post.post_title}}</a>
+        </br>
+          {{post.post_body}}
+            <p>
+                Written by
+                <a>{{post.owner.username}}</a>
+            </p>
+            <hr/>
+        </li>
+        
+    
+        {% endfor %}
+ </ul>
+
+{% endblock %}
